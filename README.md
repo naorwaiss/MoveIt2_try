@@ -32,9 +32,16 @@ Inside the GUI, provide the desired position for the bot.
 Open another terminal and run:  
 `ros2 service call /move_robot bot_movit/srv/SetJointP "{joint_positions: [float, float]}"`  
 
+### using the node 
+Open another terminal and run:  (dont forget to source )
+ros2 run bot_movit node_run.py --ros-args -p joint1:=x -p joint2:=x
+
+
 ### Service Location  
-The move bot service is located at:  
+The move bot service is located at:   (dont forget to source )
 `~ros2_ws/src/bot_movit/src/move_bot_service.cpp`  
+
+
 
 ### Bot Movement  
 - The base link can rotate from 180° to -180° (equivalent to 3.14 to -3.14 radians).  
