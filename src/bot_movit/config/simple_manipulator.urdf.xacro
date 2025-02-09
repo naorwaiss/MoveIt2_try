@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="simple_manipulator">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- Import simple_manipulator urdf file -->
+    <xacro:include filename="bot_discribe.urdf" />
+
+    <xacro:include filename="simple_manipulator.ros2_control.xacro" />
+
+
+    <xacro:simple_manipulator_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+
+</robot>
+
+
+
+
+
+<!-- 
+
+
+
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="simple_manipulator">
+    
+    <!-- Define Arguments -->
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+    <xacro:arg name="bot_discribe_path" default="$(find bot_movit)/config/bot_discribe.urdf.xacro" />
+    <xacro:arg name="control_xacro_path" default="$(find bot_movit)/config/simple_manipulator.ros2_control.xacro" />
+    
+    <!-- Import simple_manipulator URDF file as Xacro -->
+    <xacro:include filename="$(arg bot_discribe_path)" />
+
+    <!-- Import control_xacro -->
+    <xacro:include filename="$(arg control_xacro_path)" />
+
+    <!-- Instantiate the control macro -->
+    <xacro:simple_manipulator_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+    
+</robot> -->
