@@ -114,11 +114,11 @@ def generate_launch_description():
     )
 
     # Run the Python Qt GUI
-    qt_gui_process = ExecuteProcess(
-        cmd=["python3", os.path.join(
-            "/home/naor/Desktop/naor/study/naor_task2/install/bot_movit/lib/bot_movit", "qt_gui.py")],
-        output="screen"
-    )
+    # qt_gui_process = ExecuteProcess(
+        # cmd=["python3", os.path.join(
+            # "/home/naor/Desktop/naor/study/naor_task2/install/bot_movit/lib/bot_movit", "qt_gui.py")],
+        # output="screen"
+    # )
 
     return LaunchDescription([
         is_sim_arg,
@@ -127,5 +127,5 @@ def generate_launch_description():
         moveit_group_node,
         rviz_node,
         move_bot_service_node,
-        qt_gui_process  # Ensure this runs within the launch file
+        # qt_gui_process  # Ensure this runs within the launch file
     ])

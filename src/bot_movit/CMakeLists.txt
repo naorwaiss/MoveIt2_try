@@ -40,10 +40,10 @@ target_link_libraries(move_bot_service "${cpp_typesupport_target}")
 install(TARGETS move_bot_service
   DESTINATION lib/${PROJECT_NAME})
 
-install(DIRECTORY launch DESTINATION share/${PROJECT_NAME}
-  PATTERN "setup_assistant.launch" EXCLUDE)
+# install(DIRECTORY launch DESTINATION share/${PROJECT_NAME}
+  # PATTERN "setup_assistant.launch" EXCLUDE)
 install(DIRECTORY config DESTINATION share/${PROJECT_NAME})
-install(FILES .setup_assistant DESTINATION share/${PROJECT_NAME})
+# install(FILES .setup_assistant DESTINATION share/${PROJECT_NAME})
 
 # Ensure `ament_package()` is the last statement
 ament_package()
