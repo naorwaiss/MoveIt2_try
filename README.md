@@ -8,9 +8,6 @@
 Go to: `~ros_ws/src/bot_movit/launch`  
 Open the file: `gedit bot.launch.py`  
 
-At line 119:  
-"( "/home/naor/Desktop/naor/study/naor_task2/install/bot_movit/lib/bot_movit", "qt_gui.py")],"
-Change this line to your global path.  
 
 ## Running the Workspace  
 Open the first terminal and execute the following commands:  
@@ -20,9 +17,9 @@ Open the first terminal and execute the following commands:
 
 ## Running the Services (Two Methods)  
 
-### Using PyQt  
-The PyQt GUI will open at launch if you have updated the global location.  
-If PyQt does not open, start the service manually:  
+### Using PyQt
+call the command line (the servicse) - > and gave the user option to gave the joint data  
+start the service manually:  
 Open another terminal and run:  
 `cd ~/ros2_ws/src/bot_movit/scripts`  
 `python3 qt_gui.py`  
