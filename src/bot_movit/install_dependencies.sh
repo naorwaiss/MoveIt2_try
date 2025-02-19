@@ -17,6 +17,7 @@ sudo apt install -y \
     ros-humble-ament-cmake \
     ros-humble-rosidl-default-generators \
     ros-humble-rosidl-default-runtime \
+    ros-humble-moveit\
     ros-humble-moveit-ros-move-group \
     ros-humble-moveit-kinematics \
     ros-humble-moveit-planners \
