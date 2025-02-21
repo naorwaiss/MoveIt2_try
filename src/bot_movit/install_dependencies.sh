@@ -37,8 +37,10 @@ sudo apt install -y \
     ros-humble-rviz-common \
     ros-humble-rviz-default-plugins \
     ros-humble-tf2-ros \
-    ros-humble-warehouse-ros-mongo \
-    ros-humble-std-msgs
+    ros-humble-std-msgs \
+    ros-humble-moveit-ros-planning-interface 
+
+
 
 echo "Installing missing dependencies using rosdep..."
 cd ~/Desktop/naor/study/MoveIt2_try
